@@ -130,7 +130,7 @@ const Story = ({ story, setViewStoryModal, i }) => {
     let a = document.createElement("a");
     document.body.appendChild(a);
     a.style = "display: none";
-    const format = `Hi! I just made a story with ULUstory, check it out here: ${"https://ulu-staging.herokuapp.com/public/" + story.uid}`;
+    const format = `Hi! I just made a story with ULUstory, check it out here: ${"https://ulu-staging.vercel.app/public/" + story.uid}`;
     a.href = `mailto:?subject=read my story ${story.title}&body=${encodeURIComponent(format)}`;
     a.click();
   };
@@ -138,7 +138,7 @@ const Story = ({ story, setViewStoryModal, i }) => {
   const handleShareableLink = () => {
     document.getElementById(
       `story-link-${story.uid}`
-    ).value = `https://ulu-staging.herokuapp.com/public/${story.uid}`;
+    ).value = `https://ulu-staging.vercel.app/public/${story.uid}`;
     var copyText = document.getElementById(`story-link-${story.uid}`);
     copyText.select();
     copyText.setSelectionRange(0, 99999);
