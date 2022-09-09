@@ -1,0 +1,44 @@
+@import "../../../styles/index"
+
+#story-item-modal
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $grey1
+    .answer
+        font-size: 2em
+        font-weight: 600
+    .description
+        font-size: 1.4em
+        margin-bottom: 1em
+    hr
+        margin: 1em 0
+    textarea
+        background-color: #fff
+    #continue-button
+        button
+            &:hover
+                color: #171923
+
+    @media screen and ( max-width: 768px )
+        align-items: flex-start
+        padding-top: 6em
+        .answer
+            font-size: 1.35em
+            line-height: 1.25em
+        .description
+            margin-top: 1em
+            font-size: 1em
+        textarea
+            margin-top: 2em
+        #continue-button
+            position: fixed
+            bottom: 7.5em
+            z-index: 9999!important
+            width: 100%
+            left: 0
+            padding: 0 1em
+            button
+                position: relative
+                width: 100%
+                max-width: none

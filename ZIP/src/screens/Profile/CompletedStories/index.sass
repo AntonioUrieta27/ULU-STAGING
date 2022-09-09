@@ -1,0 +1,45 @@
+@import "../../../styles"
+
+.stories-completed
+    margin-top: 4em
+    .story-link
+        position: fixed
+        top: 0
+        left: 0
+        opacity: 0
+        pointer-events: none
+    .story
+        background-color: $white
+        padding: 1.5em
+        margin-bottom: 1em
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background-color: #fff
+        border-radius: 0 0.25em 0.25em 0
+        position: relative
+        box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset
+        &::before
+            content: ""
+            position: absolute
+            height: 100%
+            width: 0.25em
+            left: 0
+            background-color: $green
+        .story-info
+            .title
+                font-size: 1.2em
+                line-height: 1.2em
+                margin-bottom: 0.5em
+                text-transform: none
+            .description
+                font-size: 1em
+        .buttons
+            button
+                svg
+                    font-size: 1.5em
+
+    @media screen and ( max-width: 420px )
+        .css-r6z5ec
+            z-index: 99999
+            font-size: 1.35em

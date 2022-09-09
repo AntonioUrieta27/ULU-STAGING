@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "ulu-storytelling-app-255f9",
+    "prod": "ulu-storytelling-app-255f9"
+  },
+  "targets": {}
+}

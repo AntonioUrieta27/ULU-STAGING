@@ -1,0 +1,59 @@
+@import "../../../styles"
+
+span
+    cursor: pointer
+
+.client-table
+    background-color: #fff
+    z-index: -1
+    margin-top: 2em
+    .header-table
+        padding: 1.5em
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .left
+            display: flex
+            align-items: center
+            justify-content: center
+            .title
+                font-size: 1.75em
+                font-weight: 600
+                margin-right: 0.5em
+        button
+            z-index: 0
+            margin-left: 0.5em
+            
+            &:hover
+                background-color: $color1D
+            svg
+                font-size: 1.5em
+    .wrapper
+        display: flex
+        .subwrapper
+            &:first-child
+                margin-right: 0.5em
+    .icon
+        svg
+            font-size: 1.25em
+        &:hover
+            color: $red
+            cursor: pointer
+    @media screen and ( max-width: 1200px )
+        .wrapper
+            flex-direction: column
+            .subwrapper
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                margin-bottom: 0.5em
+                &:first-child
+                    margin-right: 0
+
+    @media screen and ( max-width: 550px )
+        margin-top: 5em
+        .header-table
+            button
+                &:last-child
+                    display: none
