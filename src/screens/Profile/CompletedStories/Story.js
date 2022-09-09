@@ -154,7 +154,7 @@ const Story = ({ story, setViewStoryModal, i }) => {
             alignItems: "center",
             marginTop: "1em",
           }}
-          href={`https://https://ulu-staging.vercel.app/public/${story.uid}`}
+          href={`https://ulu-staging.vercel.app/public/${story.uid}`}
           target="_blank"
           rel="noref"
         >
