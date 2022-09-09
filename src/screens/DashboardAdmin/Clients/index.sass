@@ -1,0 +1,38 @@
+@import "../../../styles"
+
+.admin-table
+    background-color: #fff
+    .header-table
+        margin-top: 2.5rem
+        padding: 1.5em
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .left
+            display: flex
+            align-items: center
+            justify-content: center
+            .title
+                font-size: 1.75em
+                font-weight: 600
+                margin-right: 0.5em
+
+        button
+            &:hover
+                background-color: $color1D
+            svg
+                font-size: 1.5em
+    .icon
+        svg
+            font-size: 1.25em
+        &:hover
+            color: $red
+            cursor: pointer
+
+    @media screen and ( max-width: 768px )
+        .header-table
+            margin-top: 3rem
+
+    @media screen and ( max-width: 420px )
+        .header-table
+            margin-top: 4rem

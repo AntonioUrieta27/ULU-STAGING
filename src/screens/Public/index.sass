@@ -1,0 +1,91 @@
+@import "../../styles"
+
+#public-story
+    background-color: $grey1
+    width: 100%
+    min-height: 100vh
+    .header
+        height: 30vh
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        background-color: $dark1
+        color: $grey1
+        padding-bottom: 1em
+        background-image: url("https://www.transparenttextures.com/patterns/soft-circle-scales.png")
+        background-size: 256px 56px
+        background-blend-mode: multiply
+        .title
+            font-size: 4vw
+            font-weight: 700
+            line-height: 4vw
+        .author
+            margin-top: 0.5em
+            font-size: 1.25em
+            span
+                font-weight: 600
+
+    .content
+        min-height: 66vh
+        padding: 2em 0
+        .answers
+            padding: 2em 0
+            p
+                font-size: 1.25em
+                margin-bottom: 1em
+        button
+            margin: 0.5em
+            &:first-child
+                margin-right: 0.5em
+            &:hover
+                background-color: $color1D
+            svg
+                font-size: 1.25em
+
+    .copyright
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        background-color: $grey2
+        height: 4vh
+        span
+            font-weight: 600
+    .comment-container
+        background-color: $grey2
+        border-radius: 0.5em
+        padding: 1em
+        margin-top: 1em
+    .comment-item
+        display: flex
+        align-items: center
+        margin-bottom: 1em
+    .comment-item-header
+        display: flex
+        align-items: center
+        margin-right: 0.25em
+        width: 10em
+        .comment-item-header-name
+            font-size: 1.25em
+            font-weight: 600
+            margin-right: 0.5em
+        .comment-item-header-date
+            font-size: 0.9em
+            color: $dark1
+    .comment-item-header-comment
+        font-size: 1.25em
+        font-weight: 600
+        margin-right: 0.5em
+        background-color: $white
+        border-radius: 0.5em
+        padding: 0.5em
+        width: 80em
+    @media screen and ( max-width: 768px )
+        .header
+            .title
+                font-size: 2em
+                line-height: 1.25em
+            .author
+                line-height: 1em
+    
+    

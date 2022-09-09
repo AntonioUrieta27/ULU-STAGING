@@ -1,0 +1,41 @@
+#salve-copyright
+    z-index: 1000
+    display: block
+    position: fixed
+    bottom: 1em
+    right: 1em
+    width: 2.5vw
+    height: 2.5vw
+    min-width: 3em
+    min-height: 3em
+    border-radius: 50%
+    opacity: 1
+    transition: all 0.4s ease
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+        transform: scale(1.025)
+        opacity: 1
+        .tool-tip
+            opacity: 1
+    .tool-tip
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 17em
+        display: flex
+        align-items: center
+        justify-content: start
+        padding: 0.5em 1em
+        border-radius: 0.5em 0 0.5em 0.5em
+        opacity: 0.25
+        pointer-events: none
+        transition: all 0.4s ease
+        color: #fff
+        span
+            font-size: 1.25em
+            margin: 0 0.25em
+
+    @media screen and ( max-width: 420px )
+        display: none

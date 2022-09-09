@@ -1,0 +1,30 @@
+@import "../../styles"
+@import "./ConfirmModal"
+@import "./StoryItemModal"
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 100
+    background-color: rgba(0,0,0,0.5)
+    display: grid
+    place-items: center
+    .card
+        background-color: $grey1
+        width: 95%
+        border-radius: 0.25em
+        padding: 1.5em
+        max-width: 50vh
+        max-height: 90vh
+        overflow: auto
+        position: relative
+    @media screen and ( max-width: 768px )
+        .card
+            
+
+    @media screen and ( max-width: 420px )
+        .card
+            padding: 0.5em
