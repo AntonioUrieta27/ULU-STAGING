@@ -173,28 +173,8 @@ export const database = {
         
         if(!user) return null;
 
-        const stories = (await db.ref('stories').get()).val();
-
-        let refToDelete = storage.ref(`/records`);
-        const listOfFiles = await refToDelete.listAll();
-
-        for(let story in stories){
-            const story_data = (await db.ref('stories').child(story).get()).val();
-
-            listOfFiles.items.forEach(async item => {
-                if(item.name == story){
-                    await refToDelete.child(story).delete();
-                    return;      
-                }
-            })
-
-            if(story_data.creator_id == user_uid){
-                await db.ref('stories').child(story).remove();
-            }
-        }
-        
         await db.ref('users').child(user_uid).remove();
-
+        
         return user;
     },
     deleteCompany: async (company_id) => {
